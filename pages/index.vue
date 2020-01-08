@@ -151,13 +151,6 @@
                               <v-card-title v-text="card.title"></v-card-title>
                             </v-img>
 
-                            <v-card-actions>
-                              <v-spacer></v-spacer>
-
-                              <v-btn icon>
-                                <v-icon>mdi-github-circle</v-icon>
-                              </v-btn>
-                            </v-card-actions>
                           </v-card>
                         </v-hover>
 
@@ -170,7 +163,7 @@
                 <div class="text-center">
                   <v-dialog
                     v-model="dialog"
-                    width="500"
+                    width="550"
                   >
 
                     <v-card>
@@ -180,6 +173,32 @@
                       >
                         {{this.CardTitle}}
                       </v-card-title>
+                      <v-row
+                        align="center"
+                        justify="center"
+                      >
+                        <v-carousel>
+                          <v-carousel-item
+                            v-for="(color, i) in colors"
+                            :key="color"
+                          >
+                            <v-sheet
+                              :color="color"
+                              height="100%"
+                              tile
+                            >
+                              <v-row
+                                class="fill-height"
+                                align="center"
+                                justify="center"
+                              >
+                                <div class="display-3">Slide {{ i + 1 }}</div>
+                              </v-row>
+                            </v-sheet>
+                          </v-carousel-item>
+                        </v-carousel>
+                      </v-row>
+                      <v-spacer></v-spacer>
 
                       <v-card-text>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -190,12 +209,12 @@
                       <v-card-actions>
                         <v-spacer></v-spacer>
                         <v-btn
-                          color="primary"
-                          text
-                          @click="dialog = false"
-                        >
-                          I accept
+                          block
+                          rounded
+                        >See Code
+                          <v-icon>mdi-github-circle</v-icon>
                         </v-btn>
+
                       </v-card-actions>
                     </v-card>
                   </v-dialog>
@@ -399,7 +418,7 @@ export default {
       cards: [
         {
           title: "Point of Sale",
-          src: "https://cdn.vuetifyjs.com/images/cards/house.jpg",
+          src: "~/assets/images/eazypos.png",
           flex: 6
         },
         {
@@ -411,10 +430,16 @@ export default {
           title: "Best airlines",
           src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
           flex: 6
+        },
+        {
+          title: "Best shit",
+          src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
+          flex: 6
         }
       ],
       dialog: false,
-      CardTitle: null
+      CardTitle: null,
+      colors: ["primary", "secondary", "yellow darken-2", "red", "orange"]
     };
   },
   beforeDestroy() {
