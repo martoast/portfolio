@@ -38,29 +38,21 @@
                 <section id='about'>
                   <h2>About Me</h2>
                   <v-container fluid>
-                    <v-row>
-                      <v-col cols="6">
-                        <v-card>
-                          <v-card-title>
-                            What would you do if you had a software expert available at your fingertips?
-                          </v-card-title>
 
-                        </v-card>
+                    <h4>
+                      What would you build if you had a software
+                      developer on your hands?
 
-                      </v-col>
-                      <v-col cols="6">
+                    </h4>
 
-                        <p>
-                          I am a passionate Web developer with a love for technology
-                          and a passion for innovation. My experience with sofware is
-                          focused primarily on Web Development; designing, building and deploying Full-Stack web applications.
-                          I specialize in creating software for clients ranging from individuals and small-businesses all the way
-                          to large enterprise corporations.
+                    <p>
+                      I am a passionate Web developer with a love for technology
+                      and a passion for innovation. My experience with sofware is
+                      focused primarily on Web Development; designing, building and deploying Full-Stack web applications.
+                      I specialize in creating software for clients ranging from individuals and small-businesses all the way
+                      to large enterprise corporations.
 
-                        </p>
-
-                      </v-col>
-                    </v-row>
+                    </p>
 
                   </v-container>
 
@@ -178,24 +170,22 @@
                         justify="center"
                       >
                         <v-carousel>
-                          <v-carousel-item
-                            v-for="(color, i) in colors"
-                            :key="color"
-                          >
-                            <v-sheet
-                              :color="color"
-                              height="100%"
-                              tile
+                          <div id="sample">
+
+                            <div
+                              v-for="image in this.CardImages"
+                              :key="image"
                             >
-                              <v-row
-                                class="fill-height"
-                                align="center"
-                                justify="center"
-                              >
-                                <div class="display-3">Slide {{ i + 1 }}</div>
-                              </v-row>
-                            </v-sheet>
-                          </v-carousel-item>
+                              <v-carousel-item>
+                                <v-img :src="image">
+
+                                </v-img>
+                              </v-carousel-item>
+
+                            </div>
+
+                          </div>
+
                         </v-carousel>
                       </v-row>
                       <v-spacer></v-spacer>
@@ -410,6 +400,10 @@
 </template>
 
 <script>
+import eazypos from "~/assets/images/eazypos/eazypos.png";
+import food from "~/assets/images/eazypos/food.png";
+import menuconfig from "~/assets/images/eazypos/menuconfig.png";
+import landingmodal from "~/assets/images/eazypos/landingmodal.png";
 export default {
   data() {
     return {
@@ -418,27 +412,32 @@ export default {
       cards: [
         {
           title: "Point of Sale",
-          src: "~/assets/images/eazypos.png",
-          flex: 6
+          src: eazypos,
+          flex: 6,
+          images: [landingmodal, food, menuconfig]
         },
         {
           title: "Favorite road trips",
           src: "https://cdn.vuetifyjs.com/images/cards/road.jpg",
-          flex: 6
+          flex: 6,
+          images: [landingmodal, food, menuconfig]
         },
         {
           title: "Best airlines",
           src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-          flex: 6
+          flex: 6,
+          images: [landingmodal, food, menuconfig]
         },
         {
           title: "Best shit",
           src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-          flex: 6
+          flex: 6,
+          images: [landingmodal, food, menuconfig]
         }
       ],
       dialog: false,
       CardTitle: null,
+      CardImages: null,
       colors: ["primary", "secondary", "yellow darken-2", "red", "orange"]
     };
   },
@@ -457,6 +456,7 @@ export default {
     ProjectModal(card) {
       this.CardTitle = card.title;
       this.dialog = true;
+      this.CardImages = card.images;
     }
   }
 };
