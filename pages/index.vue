@@ -16,7 +16,7 @@
                   class="text-center"
                   cols="12"
                 >
-                  <h1 class="display-1 font-weight-thin mb-4">Alejandro Martos</h1>
+                  <h1 class="display-1 font-weight-thin mb-4">Alejandro Martos Ayala</h1>
                   <h2 class="subheading">Software Engineer</h2>
                 </v-col>
               </v-row>
@@ -36,119 +36,248 @@
             >
               <div class="text-center">
                 <section id='about'>
-                  <h2>About Me</h2>
-                  <v-container fluid>
+                  <v-card>
+                    <v-row justify="center">
+                      <v-card-text class="text-center">
+                        <v-icon
+                          x-large
+                          class="blue--text text--lighten-2"
+                        >mdi-account-outline</v-icon>
+                      </v-card-text>
+                      <v-card-title class="headline">About Me</v-card-title>
 
-                    <h4>
-                      What would you build if you had a software
-                      developer on your hands?
+                    </v-row>
 
-                    </h4>
+                    <v-container fluid>
 
-                    <p>
-                      I am a passionate Web developer with a love for technology
-                      and a passion for innovation. My experience with sofware is
-                      focused primarily on Web Development; designing, building and deploying Full-Stack web applications.
-                      I specialize in creating software for clients ranging from individuals and small-businesses all the way
-                      to large enterprise corporations.
+                      <p>
+                        I am a passionate Web developer with a love for technology
+                        and a passion for innovation. My experience with sofware is
+                        focused primarily on Web Development; designing, building and deploying Full-Stack web applications.
+                        I specialize in creating software for clients ranging from individuals and small-businesses all the way
+                        to large enterprise corporations.
 
-                    </p>
+                      </p>
 
-                  </v-container>
+                    </v-container>
+
+                    <v-row justify="center">
+                      <v-card-subtitle>What would you build if you had a software
+                        developer on your hands?</v-card-subtitle>
+                    </v-row>
+
+                  </v-card>
 
                 </section>
               </div>
             </v-flex>
 
             <v-flex xs12>
-              <div class="text-center">
-                <h2 class="headline">Skills</h2>
-              </div>
+              <v-card
+                flat
+                class="transparent"
+              >
+                <div class="text-center">
+
+                  <v-row justify="center">
+                    <v-card-title class="headline"> Skills</v-card-title>
+                  </v-row>
+                </div>
+
+                <div class="text-center">
+                  <v-progress-circular
+                    :rotate="-90"
+                    :size="100"
+                    :width="15"
+                    :value="value"
+                    color="teal"
+                  >
+                    <v-icon
+                      x-large
+                      class="teal--text "
+                    >mdi-vuejs</v-icon>
+                  </v-progress-circular>
+
+                  <v-progress-circular
+                    :rotate="-90"
+                    :size="100"
+                    :width="15"
+                    :value="value"
+                    color="yellow"
+                  >
+                    <v-icon
+                      x-large
+                      class="yellow accent-3--text "
+                    >mdi-language-javascript</v-icon>
+                  </v-progress-circular>
+
+                  <v-progress-circular
+                    :rotate="-90"
+                    :size="100"
+                    :width="15"
+                    :value="value"
+                    color="purple"
+                  >
+                    <v-icon
+                      x-large
+                      class="purple--text "
+                    >mdi-language-python-text</v-icon>
+                  </v-progress-circular>
+
+                  <v-progress-circular
+                    :rotate="-90"
+                    :size="100"
+                    :width="15"
+                    :value="value"
+                    color="red"
+                  >
+                    <v-icon
+                      x-large
+                      class="red--text text--lighten-2"
+                    >mdi-language-html5</v-icon>
+                  </v-progress-circular>
+
+                  <v-progress-circular
+                    :rotate="-90"
+                    :size="100"
+                    :width="15"
+                    :value="value"
+                    color="primary"
+                  >
+                    <v-icon
+                      x-large
+                      class="primary--text "
+                    >mdi-language-css3</v-icon>
+                  </v-progress-circular>
+
+                </div>
+
+                <v-row justify="center">
+                  <v-icon
+                    x-large
+                    class="blue--text text--lighten-2"
+                  >mdi-book-open</v-icon>
+                </v-row>
+
+                <v-row justify="center">
+
+                  <v-card-title>Education</v-card-title>
+                </v-row>
+                <v-row justify="center">
+                  <v-card
+                    max-width="400"
+                    tile
+                    class="d-flex justify-center mb-6"
+                  >
+                    <v-list-item>
+                      <v-list-item-content>
+                        <v-list-item-title>Single-line item</v-list-item-title>
+                      </v-list-item-content>
+                    </v-list-item>
+
+                    <v-list-item two-line>
+                      <v-list-item-content>
+                        <v-list-item-title>Two-line item</v-list-item-title>
+                        <v-list-item-subtitle>Secondary text</v-list-item-subtitle>
+                      </v-list-item-content>
+                    </v-list-item>
+
+                    <v-list-item three-line>
+                      <v-list-item-content>
+                        <v-list-item-title>Three-line item</v-list-item-title>
+                        <v-list-item-subtitle>
+                          Secondary line text Lorem ipsum dolor sit amet,
+                        </v-list-item-subtitle>
+                        <v-list-item-subtitle>
+                          consectetur adipiscing elit.
+                        </v-list-item-subtitle>
+                      </v-list-item-content>
+                    </v-list-item>
+
+                  </v-card>
+                </v-row>
+                <v-row justify="center">
+                  <v-card
+                    max-width="400"
+                    tile
+                    class="d-flex justify-center mb-6"
+                  >
+                    <v-list-item>
+                      <v-list-item-content>
+                        <v-list-item-title>Single-line item</v-list-item-title>
+                      </v-list-item-content>
+                    </v-list-item>
+
+                    <v-list-item two-line>
+                      <v-list-item-content>
+                        <v-list-item-title>Two-line item</v-list-item-title>
+                        <v-list-item-subtitle>Secondary text</v-list-item-subtitle>
+                      </v-list-item-content>
+                    </v-list-item>
+
+                    <v-list-item three-line>
+                      <v-list-item-content>
+                        <v-list-item-title>Three-line item</v-list-item-title>
+                        <v-list-item-subtitle>
+                          Secondary line text Lorem ipsum dolor sit amet,
+                        </v-list-item-subtitle>
+                        <v-list-item-subtitle>
+                          consectetur adipiscing elit.
+                        </v-list-item-subtitle>
+                      </v-list-item-content>
+                    </v-list-item>
+
+                  </v-card>
+                </v-row>
+              </v-card>
 
               <div class="text-center">
-                <v-progress-circular
-                  :rotate="-90"
-                  :size="100"
-                  :width="15"
-                  :value="value"
-                  color="teal"
-                >
-                  <v-icon
-                    x-large
-                    class="teal--text "
-                  >mdi-vuejs</v-icon>
-                </v-progress-circular>
-
-                <v-progress-circular
-                  :rotate="-90"
-                  :size="100"
-                  :width="15"
-                  :value="value"
-                  color="yellow"
-                >
-                  <v-icon
-                    x-large
-                    class="yellow accent-3--text "
-                  >mdi-language-javascript</v-icon>
-                </v-progress-circular>
-                <v-progress-circular
-                  :rotate="-90"
-                  :size="100"
-                  :width="15"
-                  :value="value"
-                  color="red"
-                >
-                  <v-icon
-                    x-large
-                    class="red--text text--lighten-2"
-                  >mdi-language-html5</v-icon>
-                </v-progress-circular>
-
-                <v-progress-circular
-                  :rotate="-90"
-                  :size="100"
-                  :width="15"
-                  :value="value"
-                  color="primary"
-                >
-                  <v-icon
-                    x-large
-                    class="primary--text "
-                  >mdi-language-css3</v-icon>
-                </v-progress-circular>
-
-              </div>
-              <div class="text-center">
-                <h2>Recent Projects</h2>
                 <section id="projects">
-                  <v-container fluid>
-                    <v-row dense>
-                      <v-col
-                        v-for="card in cards"
-                        :key="card.title"
-                        :cols="card.flex"
-                      >
-                        <v-hover v-slot:default="{ hover }">
-                          <v-card
-                            :elevation="hover ? 12 : 2"
-                            @click="ProjectModal(card)"
-                          >
-                            <v-img
-                              :src="card.src"
-                              class="white--text align-end"
-                              gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-                              height="200px"
-                            >
-
-                              <v-card-title v-text="card.title"></v-card-title>
-                            </v-img>
-
-                          </v-card>
-                        </v-hover>
-
-                      </v-col>
+                  <v-card>
+                    <v-row justify="center">
+                      <v-card-title class="headline">
+                        Recent Projects
+                      </v-card-title>
                     </v-row>
-                  </v-container>
+
+                    <v-container fluid>
+                      <v-row dense>
+                        <v-col
+                          v-for="card in cards"
+                          :key="card.title"
+                          :cols="card.flex"
+                        >
+                          <v-hover v-slot:default="{ hover }">
+                            <v-card
+                              :elevation="hover ? 12 : 2"
+                              @click="ProjectModal(card)"
+                            >
+                              <v-img
+                                :src="card.src"
+                                class="white--text align-end"
+                                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                                height="200px"
+                              >
+
+                                <v-card-title v-text="card.title"></v-card-title>
+                              </v-img>
+                              <v-spacer></v-spacer>
+                              <v-card-actions>
+
+                              </v-card-actions>
+                              <v-icon
+                                large
+                                v-for="lang in card.languages"
+                                :key="lang"
+                              >{{lang}}</v-icon>
+
+                            </v-card>
+                          </v-hover>
+
+                        </v-col>
+                      </v-row>
+                    </v-container>
+                  </v-card>
                 </section>
               </div>
               <div>
@@ -191,7 +320,7 @@
                       <v-spacer></v-spacer>
 
                       <v-card-text>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        {{this.CardText}}
                       </v-card-text>
 
                       <v-divider></v-divider>
@@ -404,6 +533,7 @@ import eazypos from "~/assets/images/eazypos/eazypos.png";
 import food from "~/assets/images/eazypos/food.png";
 import menuconfig from "~/assets/images/eazypos/menuconfig.png";
 import landingmodal from "~/assets/images/eazypos/landingmodal.png";
+import instabot from "~/assets/images/instabot/instabot.png";
 export default {
   data() {
     return {
@@ -414,29 +544,44 @@ export default {
           title: "Point of Sale",
           src: eazypos,
           flex: 6,
-          images: [landingmodal, food, menuconfig]
+          images: [landingmodal, food, menuconfig],
+          languages: [
+            "mdi-vuejs",
+            "mdi-language-javascript",
+            "mdi-language-html5",
+            "mdi-language-css3"
+          ],
+          text:
+            "Morbi mattis ullamcorper velit. Donec orci lectus, aliquam ut, faucibus non"
         },
         {
-          title: "Favorite road trips",
-          src: "https://cdn.vuetifyjs.com/images/cards/road.jpg",
+          title: "Instragram Bot",
+          src: instabot,
           flex: 6,
-          images: [landingmodal, food, menuconfig]
+          images: [landingmodal, food, menuconfig],
+          languages: ["mdi-language-python-text"],
+          text: "ass"
         },
         {
           title: "Best airlines",
           src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
           flex: 6,
-          images: [landingmodal, food, menuconfig]
+          images: [landingmodal, food, menuconfig],
+          text:
+            "Morbi mattis ullamcorper velit. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Fusce convallis metus id felis luctus adipiscing. Aenean massa. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nulla consequat massa quis enim. Praesent venenatis metus at tortor pulvinar varius. Donec venenatis vulputate lorem. Phasellus accumsan cursus velit. Pellentesque ut neque."
         },
         {
           title: "Best shit",
           src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
           flex: 6,
-          images: [landingmodal, food, menuconfig]
+          images: [landingmodal, food, menuconfig],
+          text:
+            "Morbi mattis ullamcorper velit. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Fusce convallis metus id felis luctus adipiscing. Aenean massa. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nulla consequat massa quis enim. Praesent venenatis metus at tortor pulvinar varius. Donec venenatis vulputate lorem. Phasellus accumsan cursus velit. Pellentesque ut neque."
         }
       ],
       dialog: false,
       CardTitle: null,
+      CardText: null,
       CardImages: null,
       colors: ["primary", "secondary", "yellow darken-2", "red", "orange"]
     };
@@ -450,11 +595,13 @@ export default {
         return (this.value = 0);
       }
       this.value += 10;
-    }, 500);
+    }, 1000);
   },
   methods: {
     ProjectModal(card) {
+      console.log(card.text);
       this.CardTitle = card.title;
+      this.CardText = card.text;
       this.dialog = true;
       this.CardImages = card.images;
     }

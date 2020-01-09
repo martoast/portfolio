@@ -1,44 +1,47 @@
 <template>
   <div>
     <v-app>
-      <v-app-bar
-        app
-        color="indigo"
-      >
+      <v-card class="overflow-hiden">
+        <v-app-bar
+          app
+          shrink-on-scroll
+          color="indigo"
+        >
 
-        <v-spacer></v-spacer>
+          <v-spacer></v-spacer>
 
-        <v-toolbar-items>
-          <v-btn
-            class="white--text"
-            text
-            @click="$vuetify.goTo('#home')"
-          >home</v-btn>
-          <v-btn
-            class="white--text"
-            text
-            @click="$vuetify.goTo('#about')"
-          >about</v-btn>
-          <v-btn
-            class="white--text"
-            text
-          >projects</v-btn>
-          <v-btn
-            class="white--text"
-            text
-            @click="$vuetify.goTo('#contact')"
-          >Contact</v-btn>
-        </v-toolbar-items>
-      </v-app-bar>
+          <v-toolbar-items>
+            <v-btn
+              class="white--text"
+              text
+              @click="$vuetify.goTo('#home')"
+            >home</v-btn>
+            <v-btn
+              class="white--text"
+              text
+              @click="$vuetify.goTo('#about')"
+            >about</v-btn>
+            <v-btn
+              class="white--text"
+              text
+            >projects</v-btn>
+            <v-btn
+              class="white--text"
+              text
+              @click="$vuetify.goTo('#contact')"
+            >Contact</v-btn>
+          </v-toolbar-items>
+        </v-app-bar>
 
-      <Nuxt />
+        <Nuxt />
 
-      <v-footer
-        color="indigo"
-        app
-      >
-        <span class="white--text">&copy; 2019</span>
-      </v-footer>
+        <v-footer
+          color="indigo"
+          app
+        >
+          <span class="white--text">&copy; 2019</span>
+        </v-footer>
+      </v-card>
     </v-app>
   </div>
 </template>
