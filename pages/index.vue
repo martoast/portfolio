@@ -84,7 +84,7 @@
                 <div class="text-center">
 
                   <v-row justify="center">
-                    <v-card-title class="headline"> Skills</v-card-title>
+                    <v-card-title class="headline"> Tech Stack</v-card-title>
                   </v-row>
                 </div>
 
@@ -533,6 +533,7 @@ import instabot from "~/assets/images/instabot/instabot.png";
 import ferrominio from "~/assets/images/ferrominio/ferrominio.png";
 import ferrohistory from "~/assets/images/ferrominio/ferrohistory.png";
 import delacosta from "~/assets/images/delacosta/delacosta.png";
+import btree from "~/assets/images/btree/btree.png";
 
 export default {
   data() {
@@ -543,7 +544,7 @@ export default {
         {
           title: "Point of Sale",
           src: eazypos,
-          flex: 6,
+          flex: 12,
           images: [landingmodal, food, menuconfig],
           languages: [
             "mdi-vuejs",
@@ -554,13 +555,19 @@ export default {
           text:
             "Morbi mattis ullamcorper velit. Donec orci lectus, aliquam ut, faucibus non"
         },
+
         {
-          title: "Instragram Bot",
-          src: instabot,
+          title: "De la Costa",
+          src: delacosta,
           flex: 6,
-          images: [landingmodal, food, menuconfig],
-          languages: ["mdi-language-python-text"],
-          text: "ass"
+          images: [ferrominio, landingmodal, food, menuconfig],
+          languages: [
+            "mdi-language-javascript",
+            "mdi-language-html5",
+            "mdi-language-css3"
+          ],
+          text:
+            "Morbi mattis ullamcorper velit. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Fusce convallis metus id felis luctus adipiscing. Aenean massa. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nulla consequat massa quis enim. Praesent venenatis metus at tortor pulvinar varius. Donec venenatis vulputate lorem. Phasellus accumsan cursus velit. Pellentesque ut neque."
         },
         {
           title: "Ferrominio Proyectos",
@@ -576,15 +583,20 @@ export default {
             "Morbi mattis ullamcorper velit. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Fusce convallis metus id felis luctus adipiscing. Aenean massa. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nulla consequat massa quis enim. Praesent venenatis metus at tortor pulvinar varius. Donec venenatis vulputate lorem. Phasellus accumsan cursus velit. Pellentesque ut neque."
         },
         {
-          title: "De la Costa",
-          src: delacosta,
+          title: "Instragram Bot",
+          src: instabot,
+          flex: 6,
+          images: [landingmodal, food, menuconfig],
+          languages: ["mdi-language-python-text"],
+          text: "ass"
+        },
+
+        {
+          title: "Breadth First Search ",
+          src: btree,
           flex: 6,
           images: [ferrominio, landingmodal, food, menuconfig],
-          languages: [
-            "mdi-language-javascript",
-            "mdi-language-html5",
-            "mdi-language-css3"
-          ],
+          languages: ["mdi-language-python-text"],
           text:
             "Morbi mattis ullamcorper velit. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Fusce convallis metus id felis luctus adipiscing. Aenean massa. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nulla consequat massa quis enim. Praesent venenatis metus at tortor pulvinar varius. Donec venenatis vulputate lorem. Phasellus accumsan cursus velit. Pellentesque ut neque."
         }
