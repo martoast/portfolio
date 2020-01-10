@@ -37,7 +37,7 @@
               <div class="text-center">
                 <section id='about'>
                   <v-card
-                    max-width="600"
+                    max-width="750"
                     tile
                   >
                     <v-row justify="center">
@@ -65,8 +65,9 @@
                     </v-container>
 
                     <v-row justify="center">
-                      <v-card-subtitle>What would you build if you had a software
-                        developer on your hands?</v-card-subtitle>
+
+                      <v-card-title>What would you build if you had a software
+                        developer on your hands?</v-card-title>
                     </v-row>
 
                   </v-card>
@@ -332,101 +333,104 @@
                 </div>
               </div>
 
-              <v-container grid-list-xl>
-                <v-layout
-                  row
-                  wrap
-                  align-center
+              <section id="services">
+                <v-card
+                  flat
+                  class="transparent"
                 >
-                  <v-flex
-                    xs12
-                    md4
-                  >
-                    <v-card
-                      flat
-                      class="transparent"
+                  <v-row justify="center">
+                    <v-card-title></v-card-title>
+                  </v-row>
+                  <v-container grid-list-xl>
+
+                    <v-layout
+                      row
+                      wrap
+                      align-center
                     >
-                      <v-card-text class="text-center">
-                        <v-icon
-                          x-large
-                          class="blue--text text--lighten-2"
-                        >mdi-monitor-multiple</v-icon>
-                      </v-card-text>
-                      <v-card-title
-                        primary-title
-                        class="layout justify-center"
+                      <v-flex
+                        xs12
+                        md4
                       >
-                        <div class="headline text-center">
-                          Administra tu menú
-                        </div>
-                      </v-card-title>
-                      <v-card-text>
-                        Personaliza tus menús y explota los modificadores para
-                        aumentar tu ticket promedio. Usa fotos de tus
-                        elementos más vistosos para enamorar a tus comensales
-                        en la mesa.
-                      </v-card-text>
-                    </v-card>
-                  </v-flex>
-                  <v-flex
-                    xs12
-                    md4
-                  >
-                    <v-card
-                      flat
-                      class="transparent"
-                    >
-                      <v-card-text class="text-center">
-                        <v-icon
-                          x-large
-                          class="blue--text text--lighten-2"
-                        >mdi-flash</v-icon>
-                      </v-card-text>
-                      <v-card-title
-                        primary-title
-                        class="layout justify-center"
+                        <v-card
+                          flat
+                          class="transparent"
+                        >
+                          <v-card-text class="text-center">
+                            <v-icon
+                              x-large
+                              class="blue--text text--lighten-2"
+                            >mdi-eye</v-icon>
+                          </v-card-text>
+                          <v-card-title
+                            primary-title
+                            class="layout justify-center"
+                          >
+                            <div class="headline text-center">
+                              Research
+                            </div>
+                          </v-card-title>
+                          <v-card-text>
+                            Understand the client’s subject matter completely and build on the knowledge related to it, becoming intimately familiar with the subject matter. Determine methods to address the specific customer’s needs and requirements.
+                          </v-card-text>
+                        </v-card>
+                      </v-flex>
+                      <v-flex
+                        xs12
+                        md4
                       >
-                        <div class="headline">Acelera las compras</div>
-                      </v-card-title>
-                      <v-card-text>
-                        Envía las órdenes ala cocina más rápido y con menos
-                        errores. especificaciones de pedido y complementos
-                        totalmente personalizables.
-                      </v-card-text>
-                    </v-card>
-                  </v-flex>
-                  <v-flex
-                    xs12
-                    md4
-                  >
-                    <v-card
-                      flat
-                      class="transparent"
-                    >
-                      <v-card-text class="text-center">
-                        <v-icon
-                          x-large
-                          class="blue--text text--lighten-2"
-                        >mdi-wrench</v-icon>
-                      </v-card-text>
-                      <v-card-title
-                        primary-title
-                        class="layout justify-center"
+                        <v-card
+                          flat
+                          class="transparent"
+                        >
+                          <v-card-text class="text-center">
+                            <v-icon
+                              x-large
+                              class="blue--text text--lighten-2"
+                            >mdi-android-studio</v-icon>
+                          </v-card-text>
+                          <v-card-title
+                            primary-title
+                            class="layout justify-center"
+                          >
+                            <div class="headline">Design</div>
+                          </v-card-title>
+                          <v-card-text>
+                            Misleadingly thought of as the superficial appearance of a product, design actually encompasses a lot more. It is a cross functional process that includes market research, technical research, design of a concept, and prototype mockup.
+                          </v-card-text>
+                        </v-card>
+                      </v-flex>
+                      <v-flex
+                        xs12
+                        md4
                       >
-                        <div class="headline text-center">
-                          Analíticos en tiempo real
-                        </div>
-                      </v-card-title>
-                      <v-card-text>
-                        Vea qué ventas se han realizado desde cualquier lugar
-                        donde esté utilizando su inicio de sesión de
-                        administrador especial para ayudar a su negocio tomar
-                        decisiones mas rapido.
-                      </v-card-text>
-                    </v-card>
-                  </v-flex>
-                </v-layout>
-              </v-container>
+                        <v-card
+                          flat
+                          class="transparent"
+                        >
+                          <v-card-text class="text-center">
+                            <v-icon
+                              x-large
+                              class="blue--text text--lighten-2"
+                            >mdi-laptop-chromebook</v-icon>
+                          </v-card-text>
+                          <v-card-title
+                            primary-title
+                            class="layout justify-center"
+                          >
+                            <div class="headline text-center">
+                              Develop
+                            </div>
+                          </v-card-title>
+                          <v-card-text>
+                            Findings from the research and design phases are utilized for the production of specific products including materials, systems, and methods. Engineer utilizing the research and designs to produce commercial products for the customer.
+                          </v-card-text>
+                        </v-card>
+                      </v-flex>
+                    </v-layout>
+                  </v-container>
+                </v-card>
+              </section>
             </v-flex>
           </v-layout>
           <section id='contact'>

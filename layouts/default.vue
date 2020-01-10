@@ -28,6 +28,11 @@
             <v-btn
               class="white--text"
               text
+              @click="$vuetify.goTo('#services')"
+            >services</v-btn>
+            <v-btn
+              class="white--text"
+              text
               @click="$vuetify.goTo('#contact')"
             >Contact</v-btn>
           </v-toolbar-items>
@@ -39,7 +44,7 @@
           color="indigo"
           app
         >
-          <span class="white--text">&copy; 2019</span>
+          <span class="white--text">&copy; Martos</span>
         </v-footer>
       </v-card>
     </v-app>
