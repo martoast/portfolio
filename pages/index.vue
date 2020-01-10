@@ -36,7 +36,10 @@
             >
               <div class="text-center">
                 <section id='about'>
-                  <v-card>
+                  <v-card
+                    max-width="600"
+                    tile
+                  >
                     <v-row justify="center">
                       <v-card-text class="text-center">
                         <v-icon
@@ -153,44 +156,34 @@
                 </div>
 
                 <v-row justify="center">
-                  <v-icon
-                    x-large
-                    class="blue--text text--lighten-2"
-                  >mdi-book-open</v-icon>
-                </v-row>
-
-                <v-row justify="center">
 
                   <v-card-title>Education</v-card-title>
                 </v-row>
                 <v-row justify="center">
                   <v-card
-                    max-width="400"
+                    max-width="600"
                     tile
                     class="d-flex justify-center mb-6"
                   >
                     <v-list-item>
                       <v-list-item-content>
-                        <v-list-item-title>Single-line item</v-list-item-title>
+                        <v-list-item-title>Mesa College</v-list-item-title>
+                        <v-list-item-subtitle>San Diego, California</v-list-item-subtitle>
                       </v-list-item-content>
                     </v-list-item>
 
                     <v-list-item two-line>
                       <v-list-item-content>
-                        <v-list-item-title>Two-line item</v-list-item-title>
-                        <v-list-item-subtitle>Secondary text</v-list-item-subtitle>
+                        <v-list-item-title>Associate of Science</v-list-item-title>
+                        <v-list-item-subtitle>Physics</v-list-item-subtitle>
+
                       </v-list-item-content>
                     </v-list-item>
 
-                    <v-list-item three-line>
+                    <v-list-item>
                       <v-list-item-content>
-                        <v-list-item-title>Three-line item</v-list-item-title>
-                        <v-list-item-subtitle>
-                          Secondary line text Lorem ipsum dolor sit amet,
-                        </v-list-item-subtitle>
-                        <v-list-item-subtitle>
-                          consectetur adipiscing elit.
-                        </v-list-item-subtitle>
+                        <v-list-item-title>2014 - 2017</v-list-item-title>
+
                       </v-list-item-content>
                     </v-list-item>
 
@@ -198,32 +191,28 @@
                 </v-row>
                 <v-row justify="center">
                   <v-card
-                    max-width="400"
+                    max-width="600"
                     tile
                     class="d-flex justify-center mb-6"
                   >
-                    <v-list-item>
+                    <v-list-item two-line>
                       <v-list-item-content>
-                        <v-list-item-title>Single-line item</v-list-item-title>
+                        <v-list-item-title>CETYS University</v-list-item-title>
+                        <v-list-item-subtitle>Tijuana, Mexico</v-list-item-subtitle>
                       </v-list-item-content>
                     </v-list-item>
 
                     <v-list-item two-line>
                       <v-list-item-content>
-                        <v-list-item-title>Two-line item</v-list-item-title>
-                        <v-list-item-subtitle>Secondary text</v-list-item-subtitle>
+                        <v-list-item-title>Bachelor of Science</v-list-item-title>
+                        <v-list-item-subtitle>Computer Engineering</v-list-item-subtitle>
                       </v-list-item-content>
                     </v-list-item>
 
-                    <v-list-item three-line>
+                    <v-list-item>
                       <v-list-item-content>
-                        <v-list-item-title>Three-line item</v-list-item-title>
-                        <v-list-item-subtitle>
-                          Secondary line text Lorem ipsum dolor sit amet,
-                        </v-list-item-subtitle>
-                        <v-list-item-subtitle>
-                          consectetur adipiscing elit.
-                        </v-list-item-subtitle>
+                        <v-list-item-title>2016 - Present</v-list-item-title>
+
                       </v-list-item-content>
                     </v-list-item>
 
@@ -234,6 +223,12 @@
               <div class="text-center">
                 <section id="projects">
                   <v-card>
+                    <v-row justify="center">
+                      <v-icon
+                        x-large
+                        class="blue--text text--lighten-2"
+                      >mdi-code-tags</v-icon>
+                    </v-row>
                     <v-row justify="center">
                       <v-card-title class="headline">
                         Recent Projects
@@ -317,13 +312,10 @@
 
                         </v-carousel>
                       </v-row>
-                      <v-spacer></v-spacer>
 
                       <v-card-text>
                         {{this.CardText}}
                       </v-card-text>
-
-                      <v-divider></v-divider>
 
                       <v-card-actions>
                         <v-spacer></v-spacer>
@@ -534,6 +526,10 @@ import food from "~/assets/images/eazypos/food.png";
 import menuconfig from "~/assets/images/eazypos/menuconfig.png";
 import landingmodal from "~/assets/images/eazypos/landingmodal.png";
 import instabot from "~/assets/images/instabot/instabot.png";
+import ferrominio from "~/assets/images/ferrominio/ferrominio.png";
+import ferrohistory from "~/assets/images/ferrominio/ferrohistory.png";
+import delacosta from "~/assets/images/delacosta/delacosta.png";
+
 export default {
   data() {
     return {
@@ -563,18 +559,28 @@ export default {
           text: "ass"
         },
         {
-          title: "Best airlines",
-          src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
+          title: "Ferrominio Proyectos",
+          src: ferrominio,
           flex: 6,
-          images: [landingmodal, food, menuconfig],
+          images: [ferrominio, ferrohistory],
+          languages: [
+            "mdi-language-javascript",
+            "mdi-language-html5",
+            "mdi-language-css3"
+          ],
           text:
             "Morbi mattis ullamcorper velit. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Fusce convallis metus id felis luctus adipiscing. Aenean massa. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nulla consequat massa quis enim. Praesent venenatis metus at tortor pulvinar varius. Donec venenatis vulputate lorem. Phasellus accumsan cursus velit. Pellentesque ut neque."
         },
         {
-          title: "Best shit",
-          src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
+          title: "De la Costa",
+          src: delacosta,
           flex: 6,
-          images: [landingmodal, food, menuconfig],
+          images: [ferrominio, landingmodal, food, menuconfig],
+          languages: [
+            "mdi-language-javascript",
+            "mdi-language-html5",
+            "mdi-language-css3"
+          ],
           text:
             "Morbi mattis ullamcorper velit. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Fusce convallis metus id felis luctus adipiscing. Aenean massa. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nulla consequat massa quis enim. Praesent venenatis metus at tortor pulvinar varius. Donec venenatis vulputate lorem. Phasellus accumsan cursus velit. Pellentesque ut neque."
         }
