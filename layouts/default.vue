@@ -24,6 +24,7 @@
             <v-btn
               class="white--text"
               text
+              @click="$vuetify.goTo('#projects')"
             >projects</v-btn>
             <v-btn
               class="white--text"

@@ -54,8 +54,8 @@
                     <v-container fluid>
 
                       <p>
-                        I am a passionate Web developer with a love for technology
-                        and a passion for innovation. My experience with sofware is
+                        I am a passionate Software Engineer with a love for technology and it's potential to improve human life.
+                        My experience with sofware is
                         focused primarily on Web Development; designing, building and deploying Full-Stack web applications.
                         I specialize in creating software for clients ranging from individuals and small-businesses all the way
                         to large enterprise corporations.
@@ -245,14 +245,14 @@
                         >
                           <v-hover v-slot:default="{ hover }">
                             <v-card
-                              :elevation="hover ? 12 : 2"
+                              :elevation="hover ? 24 : 4"
                               @click="ProjectModal(card)"
                             >
                               <v-img
                                 :src="card.src"
                                 class="white--text align-end"
                                 gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-                                height="200px"
+                                height="300px"
                               >
 
                                 <v-card-title v-text="card.title"></v-card-title>
@@ -323,7 +323,7 @@
                         <v-btn
                           block
                           rounded
-                        >See Code
+                        ><a :href="this.link">{{this.btntxt}}</a>
                           <v-icon>mdi-github-circle</v-icon>
                         </v-btn>
 
@@ -333,7 +333,7 @@
                 </div>
               </div>
 
-              <section id="services">
+              <section>
                 <v-card
                   flat
                   class="transparent"
@@ -347,6 +347,8 @@
                       row
                       wrap
                       align-center
+                      class="my-12"
+                      id="services"
                     >
                       <v-flex
                         xs12
@@ -434,13 +436,12 @@
             </v-flex>
           </v-layout>
           <section id='contact'>
-            <v-container grid-list-xl>
+            <v-container>
               <v-layout
                 row
-                wrap
                 justify-center
-                class="my-12"
               >
+
                 <v-flex
                   xs12
                   sm4
@@ -453,39 +454,9 @@
                       primary-title
                       class="layout justify-center"
                     >
-                      <div class="headline">
-                        Información General
-                      </div>
+                      <div class="headline">Contact Me</div>
                     </v-card-title>
-                    <v-card-text>
-                      Somos una empresa que cree que es hora de que las soluciones
-                      de software lleguen a México. Vemos el potencial de aportar
-                      valor a su negocio ahorrándole tiempo y dinero en sistemas
-                      obsoletos. Ofrecemos una solución confiable y económica a un
-                      problema de logística que el desarrollo de software ahora
-                      puede ayudar a resolver.
-                    </v-card-text>
-                  </v-card>
-                </v-flex>
-                <v-flex
-                  xs12
-                  sm4
-                  offset-sm1
-                >
-                  <v-card
-                    flat
-                    class="transparent"
-                  >
-                    <v-card-title
-                      primary-title
-                      class="layout justify-center"
-                    >
-                      <div class="headline">Contact us</div>
-                    </v-card-title>
-                    <v-card-text>
-                      Si tiene alguna pregunta o inquietud, llámenos para que
-                      podamos atenderlo personalmente
-                    </v-card-text>
+
                     <v-list class="transparent">
                       <v-list-item>
                         <v-list-item-action>
@@ -531,8 +502,12 @@ import menuconfig from "~/assets/images/eazypos/menuconfig.png";
 import landingmodal from "~/assets/images/eazypos/landingmodal.png";
 import instabot from "~/assets/images/instabot/instabot.png";
 import ferrominio from "~/assets/images/ferrominio/ferrominio.png";
+import ferrominio5 from "~/assets/images/ferrominio/ferrominio5.png";
+import ferrominio6 from "~/assets/images/ferrominio/ferrominio6.png";
 import ferrohistory from "~/assets/images/ferrominio/ferrohistory.png";
 import delacosta from "~/assets/images/delacosta/delacosta.png";
+import delacosta2 from "~/assets/images/delacosta/delacosta2.png";
+import delacosta3 from "~/assets/images/delacosta/delacosta3.png";
 import btree from "~/assets/images/btree/btree.png";
 
 export default {
@@ -544,6 +519,7 @@ export default {
         {
           title: "Point of Sale",
           src: eazypos,
+          link: "https://github.com/martoast/pos",
           flex: 12,
           images: [landingmodal, food, menuconfig],
           languages: [
@@ -553,58 +529,71 @@ export default {
             "mdi-language-css3"
           ],
           text:
-            "Morbi mattis ullamcorper velit. Donec orci lectus, aliquam ut, faucibus non"
+            "An E-commerce storefront system designed to get your store selling as soon as possible. Automate the annoying process of keeping track of everything you sell! Users register with a verififed email and are directed to create a menu for their store. Once saved, the user navigates to the Cash Register where they are able to begin completing sales immediately! All sales data is recorded and stored in the cloud under user's email authentication. ",
+          btntxt: "Visit Repo"
         },
 
         {
           title: "De la Costa",
           src: delacosta,
+          link: "http://www.ferrominio.com/en",
           flex: 6,
-          images: [ferrominio, landingmodal, food, menuconfig],
+          images: [delacosta, delacosta2, delacosta3],
           languages: [
             "mdi-language-javascript",
             "mdi-language-html5",
             "mdi-language-css3"
           ],
           text:
-            "Morbi mattis ullamcorper velit. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Fusce convallis metus id felis luctus adipiscing. Aenean massa. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nulla consequat massa quis enim. Praesent venenatis metus at tortor pulvinar varius. Donec venenatis vulputate lorem. Phasellus accumsan cursus velit. Pellentesque ut neque."
+            "De la Costa is an internationaly established green bean producer and exporter. The website was designed to clearly state their mission and company standards. By utilizing a clean and simple design, the site increases it's web accessibility.",
+          btntxt: "Visit Site"
         },
         {
           title: "Ferrominio Proyectos",
           src: ferrominio,
+          link: "http://www.ferrominio.com/en",
           flex: 6,
-          images: [ferrominio, ferrohistory],
+          images: [ferrominio, ferrominio5, ferrominio6, ferrohistory],
           languages: [
             "mdi-language-javascript",
             "mdi-language-html5",
             "mdi-language-css3"
           ],
           text:
-            "Morbi mattis ullamcorper velit. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Fusce convallis metus id felis luctus adipiscing. Aenean massa. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nulla consequat massa quis enim. Praesent venenatis metus at tortor pulvinar varius. Donec venenatis vulputate lorem. Phasellus accumsan cursus velit. Pellentesque ut neque."
+            "Ferrominio Proyectos is an important steel manufacturer and construction company in Baja California. The website was designed to transmit their standards and reliablility. To increase the authenticity of the website I collected real images of their installations to use on the site instead of using generic pictures online.",
+          btntxt: "Visit Site"
         },
         {
           title: "Instragram Bot",
           src: instabot,
+          link: "https://github.com/martoast/instagrambot",
           flex: 6,
-          images: [landingmodal, food, menuconfig],
+          images: [instabot],
           languages: ["mdi-language-python-text"],
-          text: "ass"
+          text:
+            "See who Unfollowed You! Use the Selenium Web Driver to create browser-based regression automation. Bot opens up chrome, goes to instagram.com, logs in with the provided username and password, and compares the list of people you follow to the list of people who follow you back, returning a json object of those usernames that dont follow you back. ",
+          btntxt: "Visit Repo"
         },
 
         {
           title: "Breadth First Search ",
           src: btree,
+          link:
+            "https://github.com/martoast/Bipartite-checking-using-Graph-Colouring-and-Breadth-First-Search-BFS-O-V-E-time-",
           flex: 6,
-          images: [ferrominio, landingmodal, food, menuconfig],
+          images: [btree],
           languages: ["mdi-language-python-text"],
           text:
-            "Morbi mattis ullamcorper velit. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Fusce convallis metus id felis luctus adipiscing. Aenean massa. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nulla consequat massa quis enim. Praesent venenatis metus at tortor pulvinar varius. Donec venenatis vulputate lorem. Phasellus accumsan cursus velit. Pellentesque ut neque."
+            "Bipartite checking using Graph colouring and Breath First Search. The Time Complexity will be O(V + E) where V is the number of vertices and E is the number of edges.",
+          btntxt: "Visit Repo"
         }
       ],
       dialog: false,
       CardTitle: null,
       CardText: null,
       CardImages: null,
+      link: null,
+      btntxt: null,
       colors: ["primary", "secondary", "yellow darken-2", "red", "orange"]
     };
   },
@@ -626,6 +615,8 @@ export default {
       this.CardText = card.text;
       this.dialog = true;
       this.CardImages = card.images;
+      this.link = card.link;
+      this.btntxt = card.btntxt;
     }
   }
 };
