@@ -549,7 +549,7 @@ export default {
           btntxt: "Visit Site"
         },
         {
-          title: "Ferrominio Proyectos",
+          title: "Ferrominio",
           src: ferrominio,
           link: "http://www.ferrominio.com/en",
           flex: 6,
@@ -576,7 +576,7 @@ export default {
         },
 
         {
-          title: "Breadth First Search ",
+          title: "Data Structures",
           src: btree,
           link:
             "https://github.com/martoast/Bipartite-checking-using-Graph-Colouring-and-Breadth-First-Search-BFS-O-V-E-time-",
