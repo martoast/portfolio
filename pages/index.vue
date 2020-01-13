@@ -1,7 +1,8 @@
 <template>
   <div>
     <div>
-      <v-app light>
+
+      <v-app>
         <v-content>
           <section id='home'>
             <v-parallax
@@ -51,18 +52,14 @@
 
                     </v-row>
 
-                    <v-container fluid>
+                    <p>
+                      I am a passionate Software Engineer with a love for technology and it's potential to improve human life.
+                      My experience with sofware is
+                      focused primarily on Web Development; designing, building and deploying Full-Stack web applications.
+                      I specialize in creating software for clients ranging from individuals and small-businesses all the way
+                      to large enterprise corporations.
 
-                      <p>
-                        I am a passionate Software Engineer with a love for technology and it's potential to improve human life.
-                        My experience with sofware is
-                        focused primarily on Web Development; designing, building and deploying Full-Stack web applications.
-                        I specialize in creating software for clients ranging from individuals and small-businesses all the way
-                        to large enterprise corporations.
-
-                      </p>
-
-                    </v-container>
+                    </p>
 
                     <v-row justify="center">
 
@@ -162,13 +159,13 @@
                 </v-row>
                 <v-row justify="center">
                   <v-card
-                    max-width="600"
+                    max-width="500"
                     tile
-                    class="d-flex justify-center mb-6"
+                    class="d-flex justify-center mb-6 overflow-hidden"
                   >
                     <v-list-item>
                       <v-list-item-content>
-                        <v-list-item-title>Mesa College</v-list-item-title>
+                        <v-list-item-title> Mesa College</v-list-item-title>
                         <v-list-item-subtitle>San Diego, California</v-list-item-subtitle>
                       </v-list-item-content>
                     </v-list-item>
@@ -192,7 +189,7 @@
                 </v-row>
                 <v-row justify="center">
                   <v-card
-                    max-width="600"
+                    max-width="500"
                     tile
                     class="d-flex justify-center mb-6"
                   >
