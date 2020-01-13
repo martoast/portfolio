@@ -290,29 +290,25 @@
                       >
                         {{this.CardTitle}}
                       </v-card-title>
-                      <v-row
-                        align="center"
-                        justify="center"
-                      >
-                        <v-carousel>
-                          <div id="sample">
 
-                            <div
-                              v-for="image in this.CardImages"
-                              :key="image"
-                            >
-                              <v-carousel-item>
-                                <v-img :src="image">
+                      <v-carousel height="300">
+                        <div id="sample">
 
-                                </v-img>
-                              </v-carousel-item>
+                          <div
+                            v-for="image in this.CardImages"
+                            :key="image"
+                          >
+                            <v-carousel-item>
+                              <v-img :src="image">
 
-                            </div>
+                              </v-img>
+                            </v-carousel-item>
 
                           </div>
 
-                        </v-carousel>
-                      </v-row>
+                        </div>
+
+                      </v-carousel>
 
                       <v-card-text>
                         {{this.CardText}}
