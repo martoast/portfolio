@@ -54,7 +54,7 @@
 
                     <p>
                       I am a passionate Software Engineer with a love for technology and it's potential to improve human life.
-                      My experience with sofware is
+                      My experience with software is
                       focused primarily on Web Development; designing, building and deploying Full-Stack web applications.
                       I specialize in creating software for clients ranging from individuals and small-businesses all the way
                       to large enterprise corporations.
