@@ -36,6 +36,14 @@
               class="my-4"
             >
               <div class="text-center">
+                <iframe
+                    allowfullscreen="true"
+                    scrolling="no"
+                    width="100%"
+                    height="300"
+                    src="https://storage.googleapis.com/vrview/2.0/index.html?preview=https://storage.googleapis.com/vrview/examples/coral-preview.jpg&amp;image=https://storage.googleapis.com/vrview/examples/coral.jpg&amp;is_stereo=true&amp;"
+                    style="border: 0px;"
+                  ></iframe>
                 <section id='about'>
                   <v-card
                     max-width="750"
