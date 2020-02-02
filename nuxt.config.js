@@ -2,6 +2,12 @@ import colors from 'vuetify/es5/util/colors'
 
 export default {
   mode: 'spa',
+  pwa: {
+    manifest: {
+      name: 'My Awesome App',
+      lang: 'fa'
+    }
+  },
   /*
   ** Headers of the page
   */
@@ -72,5 +78,10 @@ export default {
     */
     extend(config, ctx) {
     }
-  }
+  },
+  manifest: {
+    theme_color: '#3B8070',
+    name: 'My Awesome App',
+    lang: 'fa'
+  },
 }
