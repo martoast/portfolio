@@ -1,40 +1,26 @@
 <template>
   <div>
     <div>
-
       <v-app>
         <v-content>
-          <section id='home'>
+          <section id="home">
             <v-parallax
               dark
               src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
             >
-              <v-row
-                align="center"
-                justify="center"
-              >
-                <v-col
-                  class="text-center"
-                  cols="12"
-                >
-                  <h1 class="display-1 font-weight-thin mb-4">Software Engineer</h1>
+              <v-row align="center" justify="center">
+                <v-col class="text-center" cols="12">
+                  <h1 class="display-1 font-weight-thin mb-4">
+                    Software Engineer
+                  </h1>
                   <h2 class="subheading">Alejandro Martos Ayala</h2>
                 </v-col>
               </v-row>
             </v-parallax>
           </section>
 
-          <v-layout
-            column
-            wrap
-            class="my-12"
-            align-center
-          >
-            <v-flex
-              xs12
-              sm4
-              class="my-4"
-            >
+          <v-layout column wrap class="my-12" align-center>
+            <v-flex xs12 sm4 class="my-4">
               <div class="text-center">
                 <!-- <iframe
                   allowfullscreen="true"
@@ -45,50 +31,41 @@
                   src="https://storage.googleapis.com/vrview/2.0/index.html?preview=https://storage.googleapis.com/vrview/examples/coral-preview.jpg&amp;image=https://storage.googleapis.com/vrview/examples/coral.jpg&amp;is_stereo=true&amp;"
                   style="border: 0px;"
                 ></iframe> -->
-                <section id='about'>
-                  <v-card
-                    max-width="750"
-                    tile
-                  >
+                <section id="about">
+                  <v-card max-width="750" tile>
                     <v-row justify="center">
                       <v-card-text class="text-center">
-                        <v-icon
-                          x-large
-                          class="blue--text text--lighten-2"
-                        >mdi-account-outline</v-icon>
+                        <v-icon x-large class="blue--text text--lighten-2"
+                          >mdi-account-outline</v-icon
+                        >
                       </v-card-text>
                       <v-card-title class="headline">About Me</v-card-title>
-
                     </v-row>
 
                     <p>
-                      I am a passionate Software Engineer with a love for technology and it's potential to improve human life.
-                      My experience with software is
-                      focused primarily on Web Development; designing, building and deploying Full-Stack web applications.
-                      I specialize in creating software for clients ranging from individuals and small-businesses all the way
-                      to large enterprise corporations.
-
+                      I am a passionate Software Engineer with a love for
+                      technology and it's potential to improve human life. My
+                      experience with software is focused primarily on Web
+                      Development; designing, building and deploying Full-Stack
+                      web applications. I specialize in creating software for
+                      clients ranging from individuals and small-businesses all
+                      the way to large enterprise corporations.
                     </p>
 
                     <v-row justify="center">
-
-                      <v-card-title>What would you build if you had a software
-                        developer on your hands?</v-card-title>
+                      <v-card-title
+                        >What would you build if you had a software developer on
+                        your hands?</v-card-title
+                      >
                     </v-row>
-
                   </v-card>
-
                 </section>
               </div>
             </v-flex>
 
             <v-flex xs12>
-              <v-card
-                flat
-                class="transparent"
-              >
+              <v-card flat class="transparent">
                 <div class="text-center">
-
                   <v-row justify="center">
                     <v-card-title class="headline"> Tech Stack</v-card-title>
                   </v-row>
@@ -102,10 +79,7 @@
                     :value="value"
                     color="teal"
                   >
-                    <v-icon
-                      x-large
-                      class="teal--text "
-                    >mdi-vuejs</v-icon>
+                    <v-icon x-large class="teal--text ">mdi-vuejs</v-icon>
                   </v-progress-circular>
 
                   <v-progress-circular
@@ -115,10 +89,9 @@
                     :value="value"
                     color="yellow"
                   >
-                    <v-icon
-                      x-large
-                      class="yellow accent-3--text "
-                    >mdi-language-javascript</v-icon>
+                    <v-icon x-large class="yellow accent-3--text "
+                      >mdi-language-javascript</v-icon
+                    >
                   </v-progress-circular>
 
                   <v-progress-circular
@@ -128,10 +101,9 @@
                     :value="value"
                     color="purple"
                   >
-                    <v-icon
-                      x-large
-                      class="purple--text "
-                    >mdi-language-python-text</v-icon>
+                    <v-icon x-large class="purple--text "
+                      >mdi-language-python-text</v-icon
+                    >
                   </v-progress-circular>
 
                   <v-progress-circular
@@ -141,10 +113,9 @@
                     :value="value"
                     color="red"
                   >
-                    <v-icon
-                      x-large
-                      class="red--text text--lighten-2"
-                    >mdi-language-html5</v-icon>
+                    <v-icon x-large class="red--text text--lighten-2"
+                      >mdi-language-html5</v-icon
+                    >
                   </v-progress-circular>
 
                   <v-progress-circular
@@ -154,16 +125,13 @@
                     :value="value"
                     color="primary"
                   >
-                    <v-icon
-                      x-large
-                      class="primary--text "
-                    >mdi-language-css3</v-icon>
+                    <v-icon x-large class="primary--text "
+                      >mdi-language-css3</v-icon
+                    >
                   </v-progress-circular>
-
                 </div>
 
                 <v-row justify="center">
-
                   <v-card-title>Education</v-card-title>
                 </v-row>
                 <v-row justify="center">
@@ -175,25 +143,26 @@
                     <v-list-item>
                       <v-list-item-content>
                         <v-list-item-title> Mesa College</v-list-item-title>
-                        <v-list-item-subtitle>San Diego, California</v-list-item-subtitle>
+                        <v-list-item-subtitle
+                          >San Diego, California</v-list-item-subtitle
+                        >
                       </v-list-item-content>
                     </v-list-item>
 
                     <v-list-item two-line>
                       <v-list-item-content>
-                        <v-list-item-title>Associate of Science</v-list-item-title>
+                        <v-list-item-title
+                          >Associate of Science</v-list-item-title
+                        >
                         <v-list-item-subtitle>Physics</v-list-item-subtitle>
-
                       </v-list-item-content>
                     </v-list-item>
 
                     <v-list-item>
                       <v-list-item-content>
                         <v-list-item-title>2014 - 2017</v-list-item-title>
-
                       </v-list-item-content>
                     </v-list-item>
-
                   </v-card>
                 </v-row>
                 <v-row justify="center">
@@ -205,24 +174,28 @@
                     <v-list-item two-line>
                       <v-list-item-content>
                         <v-list-item-title>CETYS University</v-list-item-title>
-                        <v-list-item-subtitle>Tijuana, Mexico</v-list-item-subtitle>
+                        <v-list-item-subtitle
+                          >Tijuana, Mexico</v-list-item-subtitle
+                        >
                       </v-list-item-content>
                     </v-list-item>
 
                     <v-list-item two-line>
                       <v-list-item-content>
-                        <v-list-item-title>Bachelor of Science</v-list-item-title>
-                        <v-list-item-subtitle>Computer Engineering</v-list-item-subtitle>
+                        <v-list-item-title
+                          >Bachelor of Science</v-list-item-title
+                        >
+                        <v-list-item-subtitle
+                          >Computer Engineering</v-list-item-subtitle
+                        >
                       </v-list-item-content>
                     </v-list-item>
 
                     <v-list-item>
                       <v-list-item-content>
                         <v-list-item-title>2016 - Present</v-list-item-title>
-
                       </v-list-item-content>
                     </v-list-item>
-
                   </v-card>
                 </v-row>
               </v-card>
@@ -231,10 +204,9 @@
                 <section id="projects">
                   <v-card>
                     <v-row justify="center">
-                      <v-icon
-                        x-large
-                        class="blue--text text--lighten-2"
-                      >mdi-code-tags</v-icon>
+                      <v-icon x-large class="blue--text text--lighten-2"
+                        >mdi-code-tags</v-icon
+                      >
                     </v-row>
                     <v-row justify="center">
                       <v-card-title class="headline">
@@ -260,22 +232,20 @@
                                 gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
                                 height="300px"
                               >
-
-                                <v-card-title v-text="card.title"></v-card-title>
+                                <v-card-title
+                                  v-text="card.title"
+                                ></v-card-title>
                               </v-img>
                               <v-spacer></v-spacer>
-                              <v-card-actions>
-
-                              </v-card-actions>
+                              <v-card-actions> </v-card-actions>
                               <v-icon
                                 large
                                 v-for="lang in card.languages"
                                 :key="lang"
-                              >{{lang}}</v-icon>
-
+                                >{{ lang }}</v-icon
+                              >
                             </v-card>
                           </v-hover>
-
                         </v-col>
                       </v-row>
                     </v-container>
@@ -284,51 +254,35 @@
               </div>
               <div>
                 <div class="text-center">
-                  <v-dialog
-                    v-model="dialog"
-                    width="550"
-                  >
-
+                  <v-dialog v-model="dialog" width="550">
                     <v-card>
                       <v-card-title
                         class="headline grey lighten-2"
                         primary-title
                       >
-                        {{this.CardTitle}}
+                        {{ this.CardTitle }}
                       </v-card-title>
 
                       <v-carousel height="300">
                         <div id="sample">
-
-                          <div
-                            v-for="image in this.CardImages"
-                            :key="image"
-                          >
+                          <div v-for="image in this.CardImages" :key="image">
                             <v-carousel-item>
-                              <v-img :src="image">
-
-                              </v-img>
+                              <v-img :src="image"> </v-img>
                             </v-carousel-item>
-
                           </div>
-
                         </div>
-
                       </v-carousel>
 
                       <v-card-text>
-                        {{this.CardText}}
+                        {{ this.CardText }}
                       </v-card-text>
 
                       <v-card-actions>
                         <v-spacer></v-spacer>
-                        <v-btn
-                          block
-                          rounded
-                        ><a :href="this.link">{{this.btntxt}}</a>
+                        <v-btn block rounded
+                          ><a :href="this.link">{{ this.btntxt }}</a>
                           <v-icon>mdi-github-circle</v-icon>
                         </v-btn>
-
                       </v-card-actions>
                     </v-card>
                   </v-dialog>
@@ -336,35 +290,18 @@
               </div>
 
               <section>
-                <v-card
-                  flat
-                  class="transparent"
-                >
+                <v-card flat class="transparent">
                   <v-row justify="center">
                     <v-card-title></v-card-title>
                   </v-row>
                   <v-container grid-list-xl>
-
-                    <v-layout
-                      row
-                      wrap
-                      align-center
-                      class="my-12"
-                      id="services"
-                    >
-                      <v-flex
-                        xs12
-                        md4
-                      >
-                        <v-card
-                          flat
-                          class="transparent"
-                        >
+                    <v-layout row wrap align-center class="my-12" id="services">
+                      <v-flex xs12 md4>
+                        <v-card flat class="transparent">
                           <v-card-text class="text-center">
-                            <v-icon
-                              x-large
-                              class="blue--text text--lighten-2"
-                            >mdi-eye</v-icon>
+                            <v-icon x-large class="blue--text text--lighten-2"
+                              >mdi-eye</v-icon
+                            >
                           </v-card-text>
                           <v-card-title
                             primary-title
@@ -375,23 +312,20 @@
                             </div>
                           </v-card-title>
                           <v-card-text>
-                            Understand the client’s subject matter completely and build on the knowledge related to it, becoming intimately familiar with the subject matter. Determine methods to address the specific customer’s needs and requirements.
+                            Understand the client’s subject matter completely
+                            and build on the knowledge related to it, becoming
+                            intimately familiar with the subject matter.
+                            Determine methods to address the specific customer’s
+                            needs and requirements.
                           </v-card-text>
                         </v-card>
                       </v-flex>
-                      <v-flex
-                        xs12
-                        md4
-                      >
-                        <v-card
-                          flat
-                          class="transparent"
-                        >
+                      <v-flex xs12 md4>
+                        <v-card flat class="transparent">
                           <v-card-text class="text-center">
-                            <v-icon
-                              x-large
-                              class="blue--text text--lighten-2"
-                            >mdi-android-studio</v-icon>
+                            <v-icon x-large class="blue--text text--lighten-2"
+                              >mdi-android-studio</v-icon
+                            >
                           </v-card-text>
                           <v-card-title
                             primary-title
@@ -400,23 +334,20 @@
                             <div class="headline">Design</div>
                           </v-card-title>
                           <v-card-text>
-                            Misleadingly thought of as the superficial appearance of a product, design actually encompasses a lot more. It is a cross functional process that includes market research, technical research, design of a concept, and prototype mockup.
+                            Misleadingly thought of as the superficial
+                            appearance of a product, design actually encompasses
+                            a lot more. It is a cross functional process that
+                            includes market research, technical research, design
+                            of a concept, and prototype mockup.
                           </v-card-text>
                         </v-card>
                       </v-flex>
-                      <v-flex
-                        xs12
-                        md4
-                      >
-                        <v-card
-                          flat
-                          class="transparent"
-                        >
+                      <v-flex xs12 md4>
+                        <v-card flat class="transparent">
                           <v-card-text class="text-center">
-                            <v-icon
-                              x-large
-                              class="blue--text text--lighten-2"
-                            >mdi-laptop-chromebook</v-icon>
+                            <v-icon x-large class="blue--text text--lighten-2"
+                              >mdi-laptop-chromebook</v-icon
+                            >
                           </v-card-text>
                           <v-card-title
                             primary-title
@@ -427,7 +358,11 @@
                             </div>
                           </v-card-title>
                           <v-card-text>
-                            Findings from the research and design phases are utilized for the production of specific products including materials, systems, and methods. Engineer utilizing the research and designs to produce commercial products for the customer.
+                            Findings from the research and design phases are
+                            utilized for the production of specific products
+                            including materials, systems, and methods. Engineer
+                            utilizing the research and designs to produce
+                            commercial products for the customer.
                           </v-card-text>
                         </v-card>
                       </v-flex>
@@ -437,32 +372,21 @@
               </section>
             </v-flex>
           </v-layout>
-          <section id='contact'>
+          <section id="contact">
             <v-container>
-              <v-layout
-                row
-                justify-center
-              >
-
-                <v-flex
-                  xs12
-                  sm4
-                >
-                  <v-card
-                    flat
-                    class="transparent"
-                  >
-                    <v-card-title
-                      primary-title
-                      class="layout justify-center"
-                    >
+              <v-layout row justify-center>
+                <v-flex xs12 sm4>
+                  <v-card flat class="transparent">
+                    <v-card-title primary-title class="layout justify-center">
                       <div class="headline">Contact Me</div>
                     </v-card-title>
 
                     <v-list class="transparent">
                       <v-list-item>
                         <v-list-item-action>
-                          <v-icon class="blue--text text--lighten-2">mdi-phone</v-icon>
+                          <v-icon class="blue--text text--lighten-2"
+                            >mdi-phone</v-icon
+                          >
                         </v-list-item-action>
                         <v-list-item-content>
                           <v-list-item-title>619-888-5248</v-list-item-title>
@@ -470,7 +394,9 @@
                       </v-list-item>
                       <v-list-item>
                         <v-list-item-action>
-                          <v-icon class="blue--text text--lighten-2">mdi-map-marker</v-icon>
+                          <v-icon class="blue--text text--lighten-2"
+                            >mdi-map-marker</v-icon
+                          >
                         </v-list-item-action>
                         <v-list-item-content>
                           <v-list-item-title>Tijuana, MX</v-list-item-title>
@@ -478,10 +404,14 @@
                       </v-list-item>
                       <v-list-item>
                         <v-list-item-action>
-                          <v-icon class="blue--text text--lighten-2">mdi-email</v-icon>
+                          <v-icon class="blue--text text--lighten-2"
+                            >mdi-email</v-icon
+                          >
                         </v-list-item-action>
                         <v-list-item-content>
-                          <v-list-item-title>alexmartos96@gmail.com</v-list-item-title>
+                          <v-list-item-title
+                            >alexmartos96@gmail.com</v-list-item-title
+                          >
                         </v-list-item-content>
                       </v-list-item>
                     </v-list>
@@ -490,7 +420,6 @@
               </v-layout>
             </v-container>
           </section>
-
         </v-content>
       </v-app>
     </div>
@@ -628,7 +557,8 @@ export default {
         hid: "test",
         name: "vue.js developer",
         content:
-          "software developer engineer in Mexico with experience building full stack web appliactions."
+          "software developer engineer in Mexico with experience building full stack web appliactions.",
+        description: "this is the description"
       }
     ]
     // noscript: [{ innerHTML: "Body No Scripts", body: true }],
