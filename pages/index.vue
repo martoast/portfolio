@@ -17,8 +17,8 @@
                   class="text-center"
                   cols="12"
                 >
-                  <h1 class="display-1 font-weight-thin mb-4">Alejandro Martos Ayala</h1>
-                  <h2 class="subheading">Software Engineer</h2>
+                  <h1 class="display-1 font-weight-thin mb-4">Software Engineer</h1>
+                  <h2 class="subheading">Alejandro Martos Ayala</h2>
                 </v-col>
               </v-row>
             </v-parallax>
@@ -37,13 +37,14 @@
             >
               <div class="text-center">
                 <iframe
-                    allowfullscreen="true"
-                    scrolling="no"
-                    width="100%"
-                    height="300"
-                    src="https://storage.googleapis.com/vrview/2.0/index.html?preview=https://storage.googleapis.com/vrview/examples/coral-preview.jpg&amp;image=https://storage.googleapis.com/vrview/examples/coral.jpg&amp;is_stereo=true&amp;"
-                    style="border: 0px;"
-                  ></iframe>
+                  allowfullscreen="true"
+                  title="panorama"
+                  scrolling="no"
+                  width="100%"
+                  height="300"
+                  src="https://storage.googleapis.com/vrview/2.0/index.html?preview=https://storage.googleapis.com/vrview/examples/coral-preview.jpg&amp;image=https://storage.googleapis.com/vrview/examples/coral.jpg&amp;is_stereo=true&amp;"
+                  style="border: 0px;"
+                ></iframe>
                 <section id='about'>
                   <v-card
                     max-width="750"
@@ -619,6 +620,24 @@ export default {
       this.link = card.link;
       this.btntxt = card.btntxt;
     }
+  },
+  head: {
+    title: "🚀Alejandro Martos🚀",
+    meta: [
+      {
+        hid: "test",
+        name: "vue.js developer",
+        content:
+          "software developer engineer in Mexico with experience building full stack web appliactions."
+      }
+    ]
+    // noscript: [{ innerHTML: "Body No Scripts", body: true }],
+    // script: [
+    //   { src: "/head.js" },
+    //   // Supported since 1.0
+    //   { src: "/body.js", body: true },
+    //   { src: "/defer.js", defer: "" }
+    // ]
   }
 };
 </script>
