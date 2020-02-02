@@ -442,6 +442,18 @@ import delacosta3 from "~/assets/images/delacosta/delacosta3.png";
 import btree from "~/assets/images/btree/btree.png";
 
 export default {
+  head() {
+    return {
+      title: `🚀Alejandro Martos🚀`,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "Page 1 description"
+        }
+      ]
+    };
+  },
   data() {
     return {
       interval: {},
@@ -549,26 +561,26 @@ export default {
       this.link = card.link;
       this.btntxt = card.btntxt;
     }
-  },
-  head: {
-    title: "🚀Alejandro Martos🚀",
-    meta: [
-      {
-        hid: "test",
-        name: "vue.js developer",
-        content:
-          "software developer engineer in Mexico with experience building full stack web appliactions.",
-        description: "this is the description"
-      }
-    ]
-    // noscript: [{ innerHTML: "Body No Scripts", body: true }],
-    // script: [
-    //   { src: "/head.js" },
-    //   // Supported since 1.0
-    //   { src: "/body.js", body: true },
-    //   { src: "/defer.js", defer: "" }
-    // ]
   }
+  // head: {
+  // title: "🚀Alejandro Martos🚀",
+  // meta: [
+  //   {
+  //     hid: "test",
+  //     name: "vue.js developer",
+  //     content:
+  //       "software developer engineer in Mexico with experience building full stack web appliactions.",
+  //     description: "this is the description"
+  //   }
+  // ]
+  // noscript: [{ innerHTML: "Body No Scripts", body: true }],
+  // script: [
+  //   { src: "/head.js" },
+  //   // Supported since 1.0
+  //   { src: "/body.js", body: true },
+  //   { src: "/defer.js", defer: "" }
+  // ]
+  // }
 };
 </script>
 <style scoped>
