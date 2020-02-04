@@ -2,15 +2,15 @@
   <div>
     <v-app id="app">
       <v-card class="overflow-hidden">
-        <v-app-bar
+        <!-- <v-app-bar
           app
           shrink-on-scroll
           color="indigo"
         >
 
-          <v-spacer></v-spacer>
+          <v-spacer></v-spacer> -->
 
-          <v-toolbar-items>
+        <!-- <v-toolbar-items>
 
             <v-btn
               class="white--text"
@@ -34,8 +34,8 @@
               width="50"
               @click="$vuetify.goTo('#contact')"
             >Contact</v-btn>
-          </v-toolbar-items>
-        </v-app-bar>
+          </v-toolbar-items> -->
+        <!-- </v-app-bar> -->
 
         <Nuxt />
       </v-card>

@@ -36,10 +36,9 @@
               sm4
               class="my-4"
             >
-              <v-responsive class="overflow-y-auto">
-                <v-lazy transition="fade-transition">
-                  <div class="text-center">
-                    <!-- <iframe
+
+              <div class="text-center">
+                <!-- <iframe
                   allowfullscreen="true"
                   title="panorama"
                   scrolling="no"
@@ -48,40 +47,39 @@
                   src="https://storage.googleapis.com/vrview/2.0/index.html?preview=https://storage.googleapis.com/vrview/examples/coral-preview.jpg&amp;image=https://storage.googleapis.com/vrview/examples/coral.jpg&amp;is_stereo=true&amp;"
                   style="border: 0px;"
                 ></iframe> -->
-                    <section id="about">
-                      <v-card
-                        max-width="750"
-                        tile
-                      >
-                        <v-row justify="center">
-                          <v-card-text class="text-center">
-                            <v-icon
-                              x-large
-                              class="blue--text text--lighten-2"
-                            >mdi-account-outline</v-icon>
-                          </v-card-text>
-                          <v-card-title class="headline">About Me</v-card-title>
-                        </v-row>
+                <section id="about">
+                  <v-card
+                    max-width="750"
+                    tile
+                  >
+                    <v-row justify="center">
+                      <v-card-text class="text-center">
+                        <v-icon
+                          x-large
+                          class="blue--text text--lighten-2"
+                        >mdi-account-outline</v-icon>
+                      </v-card-text>
+                      <v-card-title class="headline">About Me</v-card-title>
+                    </v-row>
 
-                        <p>
-                          I am a passionate Software Engineer with a love for
-                          technology and it's potential to improve human life. My
-                          experience with software is focused primarily on Web
-                          Development; designing, building and deploying Full-Stack
-                          web applications. I specialize in creating software for
-                          clients ranging from individuals and small-businesses all
-                          the way to large enterprise corporations.
-                        </p>
+                    <p>
+                      I am a passionate Software Engineer with a love for
+                      technology and it's potential to improve human life. My
+                      experience with software is focused primarily on Web
+                      Development; designing, building and deploying Full-Stack
+                      web applications. I specialize in creating software for
+                      clients ranging from individuals and small-businesses all
+                      the way to large enterprise corporations.
+                    </p>
 
-                        <v-row justify="center">
-                          <v-card-title>What would you build if you had a software developer on
-                            your hands?</v-card-title>
-                        </v-row>
-                      </v-card>
-                    </section>
-                  </div>
-                </v-lazy>
-              </v-responsive>
+                    <v-row justify="center">
+                      <v-card-title>What would you build if you had a software developer on
+                        your hands?</v-card-title>
+                    </v-row>
+                  </v-card>
+                </section>
+              </div>
+
             </v-flex>
 
             <v-flex xs12>
