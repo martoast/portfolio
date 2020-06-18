@@ -138,7 +138,7 @@
                           <v-icon
                             x-large
                             class="purple--text "
-                          >mdi-language-python-text</v-icon>
+                          >mdi-language-python</v-icon>
                         </v-progress-circular>
 
                         <v-progress-circular
@@ -164,7 +164,7 @@
                           <v-icon
                             x-large
                             class="primary--text "
-                          >mdi-language-css3</v-icon>
+                          >mdi-language-csharp</v-icon>
                         </v-progress-circular>
                       </div>
                     </div>
@@ -550,6 +550,8 @@ import delacosta from "~/assets/images/delacosta/delacosta.png";
 import delacosta2 from "~/assets/images/delacosta/delacosta2.png";
 import delacosta3 from "~/assets/images/delacosta/delacosta3.png";
 import btree from "~/assets/images/btree/btree.png";
+import Virtual from "~/assets/images/Vr/Virtual.png";
+import Balls from "~/assets/images/Vr/ballsVr.png";
 
 export default {
   head() {
@@ -588,18 +590,18 @@ export default {
         },
 
         {
-          title: "De la Costa",
-          src: delacosta,
-          link: "http://www.ferrominio.com/en",
+          title: "Virtual Reality",
+          src: Virtual,
+          link: "",
           flex: 6,
-          images: [delacosta, delacosta2, delacosta3],
+          images: [Virtual, Balls],
           languages: [
-            "mdi-language-javascript",
-            "mdi-language-html5",
-            "mdi-language-css3"
+            "mdi-hololens",
+            "mdi-language-csharp",
+            "mdi-cube-outline"
           ],
           text:
-            "De la Costa is an internationaly established green bean producer and exporter. The website was designed to clearly state their mission and company standards. By utilizing a clean and simple design, the site increases it's web accessibility.",
+            "Designed and developed a virtual reality ‘play room’ for the purpose of understanding the fundamental mechanics that are crucial for any good VR experience. The play room includes a simulated bowling alley in which players walk up to a table and pick up a ball and knock down pins. All physics and animations were done using the game engine Unity.",
           btntxt: "Visit Site"
         },
         {
